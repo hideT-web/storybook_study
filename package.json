@@ -1,0 +1,32 @@
+{
+  "name": "studystorybook",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestorybook": "shx mkdir -p public/css && shx cp src/assets/css/style.css public/css/ && shx cp src/assets/icon/favicon.svg public/",
+    "storybook": "npm run prestorybook && storybook dev -p 6006",
+    "prebuild-storybook": "shx mkdir -p public/css && shx cp src/assets/css/style.css public/css/ && shx cp src/assets/icon/favicon.svg public/",
+    "build-storybook": "npm run prebuild-storybook && storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/html": "^8.6.14",
+    "@storybook/html-vite": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@whitespace/storybook-addon-html": "^7.0.0",
+    "shx": "^0.4.0",
+    "storybook": "^8.6.14"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "fs-extra": "^11.3.0"
+  }
+}

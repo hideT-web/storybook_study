@@ -1,0 +1,22 @@
+/* userlist.css */
+.user-list-section {
+  padding: 20px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-photo {
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}

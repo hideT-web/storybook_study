@@ -1,0 +1,12 @@
+.header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.header h1 {
+  margin: 0;
+}
+.header p {
+  margin: 4px 0 0;
+}
